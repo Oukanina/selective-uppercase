@@ -1,0 +1,3 @@
+[
+    { "keys": ["alt+u"], "command": "toupper" }
+]
