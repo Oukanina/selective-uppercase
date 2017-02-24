@@ -1,0 +1,16 @@
+[
+    {
+        "caption": "Tools",
+        "id": "tools",
+        "mnemonic": "T",
+        "children":
+        [
+            {
+                "caption": "Toupper: add words",
+                "id": "toupper",
+                "command": "open_file",
+                "args": {"file": "${packages}/toupper/keywords.json"} 
+            }
+        ]
+    }
+]
