@@ -1,6 +1,6 @@
 [
     {
-        "caption": "Toupper: Uppercase selection words",
-        "command": "toupper"
+        "caption": "selectiveUppercase: Uppercase selection words",
+        "command": "selective_uppercase"
     }
 ]

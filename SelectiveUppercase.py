@@ -4,11 +4,11 @@ import re
 import json
 
 
-CONFIG_FILE_PATH = 'Packages/toupper/keywords.json'
+CONFIG_FILE_PATH = 'Packages/selective-uppercase/keywords.json'
 word_match = re.compile(r"(\W|\w+)")
 
 
-class ToupperCommand(sublime_plugin.TextCommand):
+class SelectiveUppercaseCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         window = sublime.active_window()

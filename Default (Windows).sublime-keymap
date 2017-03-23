@@ -1,3 +1,3 @@
 [
-    { "keys": ["alt+u"], "command": "toupper" }
+    { "keys": ["alt+u"], "command": "selective_uppercase" }
 ]

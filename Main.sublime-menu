@@ -6,10 +6,10 @@
         "children":
         [
             {
-                "caption": "Toupper: add words",
-                "id": "toupper",
+                "caption": "SelectiveUppercase: add words",
+                "id": "selectiveUppercase",
                 "command": "open_file",
-                "args": {"file": "${packages}/toupper/keywords.json"} 
+                "args": {"file": "${packages}/selective-uppercase/keywords.json"}
             }
         ]
     }
