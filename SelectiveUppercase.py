@@ -2,11 +2,21 @@ import sublime
 import sublime_plugin
 import re
 import json
+import os
 
 
-CONFIG_FILE_PATH = 'Packages/selective-uppercase/keywords.json'
+CONFIG_FILE_PATH = 'Packages/User/keywords.json'
+CONFIG_FILE_FULL_PATH = "{}/User/keywords.json".format(sublime.packages_path())
 word_match = re.compile(r"(\W|\w+)")
 
+def create_file():
+    f = open(CONFIG_FILE_FULL_PATH, "w+")
+    f.write(
+        '''{\n\t"list": [\n\t\t"selectiveUppercase"\n\t]\n}\n''')
+    f.close()
+
+if not os.path.exists(CONFIG_FILE_FULL_PATH):
+    create_file()
 
 class SelectiveUppercaseCommand(sublime_plugin.TextCommand):
 
@@ -32,4 +42,4 @@ class SelectiveUppercaseCommand(sublime_plugin.TextCommand):
         self.view.replace(edit, region, '\n'.join(lines))
 
     def is_keyword(self, word):
-        return word.upper() in self.keywords_list or word.lower() in self.keywords_list
+        return word in self.keywords_list

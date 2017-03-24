@@ -9,7 +9,7 @@
                 "caption": "SelectiveUppercase: add words",
                 "id": "selectiveUppercase",
                 "command": "open_file",
-                "args": {"file": "${packages}/selective-uppercase/keywords.json"}
+                "args": {"file": "${packages}/User/keywords.json"}
             }
         ]
     }
