@@ -8,8 +8,11 @@
             {
                 "caption": "SelectiveUppercase: add words",
                 "id": "selectiveUppercase",
-                "command": "open_file",
-                "args": {"file": "${packages}/User/keywords.json"}
+                "command": "edit_settings",
+                "args": {
+                    "base_file": "${packages}/selective-uppercase/SelectiveUppercase.sublime-settings",
+                    "default": "{ \"keywords\": [  ] }"
+                }
             }
         ]
     }

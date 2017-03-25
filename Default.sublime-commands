@@ -1,6 +1,14 @@
 [
     {
-        "caption": "selectiveUppercase: Uppercase selection words",
+        "caption": "SelectiveUppercase: Uppercase selection words",
         "command": "selective_uppercase"
-    }
+    },
+    {
+        "caption": "SelectiveUppercase: Manager Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/selective-uppercase/SelectiveUppercase.sublime-settings",
+            "default": "{ \"keywords\": [  ] }"
+        }
+    },
 ]
