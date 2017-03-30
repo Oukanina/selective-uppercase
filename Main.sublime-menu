@@ -10,7 +10,7 @@
                 "id": "selectiveUppercase",
                 "command": "edit_settings",
                 "args": {
-                    "base_file": "${packages}/selective-uppercase/SelectiveUppercase.sublime-settings",
+                    "base_file": "${packages}/SelectiveUppercase/SelectiveUppercase.sublime-settings",
                     "default": "{ \"keywords\": [  ] }"
                 }
             }
